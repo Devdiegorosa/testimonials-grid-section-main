@@ -27,6 +27,7 @@
 }
 
 body {
+  height: 100vh;
   width: 100vw;
   background-color: var(--Grey100);
 }
@@ -45,7 +46,11 @@ article.one {
   color: var(--White);
 }
 
-article > div > img {
+div.person {
+  display: flex;
+}
+
+img.image {
   height: 2rem;
   width: 2rem;
   border-radius: 2rem;
@@ -87,7 +92,7 @@ article.two {
   color: var(--White);
 }
 
-article.two > div.person > img {
+img.image {
   border: 0.125rem solid var(--Grey400);
 }
 
@@ -97,7 +102,7 @@ article.three {
   color: var(--Grey500);
 }
 
-article.three > div.person > img {
+img.image {
   border: 0.125rem solid var(--Grey200);
 }
 
@@ -107,7 +112,7 @@ article.four {
   color: var(--White);
 }
 
-article.four > div.person > img {
+img.image {
   border: 0.125rem solid var(--Purple500);
 }
 
@@ -117,7 +122,7 @@ article.five {
   color: var(--Grey500);
 }
 
-article.five > div.person > img {
+img.image {
   border: 0.125rem solid var(--Grey200);
 }
 
@@ -130,16 +135,23 @@ article.five > div.person > img {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 60rem) {
+@media screen and (min-width: 64rem) {
   section {
-    padding: 14.25rem 10.25rem;
+    padding: 14.25rem 4rem;
     display: grid;
     grid-template: repeat(2, auto) / repeat(4, auto);
     gap: 1.5rem;
   }
 
+  /* article {
+    min-width: 19rem;
+  } */
+
   article.one {
     grid-area: 1 / 1 / -2 / -3;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 4rem;
   }
 
   article.two {
@@ -160,5 +172,11 @@ article.five > div.person > img {
   article.five {
     margin: 0;
     grid-area: 1 / 4 / -1 / -1;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  section {
+    padding: 14.25rem 10.25rem;
   }
 }
