@@ -37,17 +37,12 @@ section {
 
 article {
   padding: 1.875rem 2.1rem;
+  border-radius: 0.875rem;
+  box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.2);
 }
 article.one {
   background-color: var(--Purple500);
   color: var(--White);
-  border-radius: 0.875rem;
-  box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.2);
-}
-
-div.person {
-  display: flex;
-  border: 1px solid bla;
 }
 
 article > div > img {
@@ -90,8 +85,6 @@ article.two {
   margin-top: 2rem;
   background-color: var(--Grey500);
   color: var(--White);
-  border-radius: 0.875rem;
-  box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.2);
 }
 
 article.two > div.person > img {
@@ -102,8 +95,6 @@ article.three {
   margin-top: 2rem;
   background-color: var(--White);
   color: var(--Grey500);
-  border-radius: 0.875rem;
-  box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.2);
 }
 
 article.three > div.person > img {
@@ -114,8 +105,6 @@ article.four {
   margin-top: 2rem;
   background-color: var(--Darkblue);
   color: var(--White);
-  border-radius: 0.875rem;
-  box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.2);
 }
 
 article.four > div.person > img {
@@ -126,8 +115,6 @@ article.five {
   margin-top: 2rem;
   background-color: var(--White);
   color: var(--Grey500);
-  border-radius: 0.875rem;
-  box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.2);
 }
 
 article.five > div.person > img {
