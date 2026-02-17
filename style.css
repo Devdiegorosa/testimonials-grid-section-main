@@ -138,7 +138,7 @@ article.five > div.person > img {
 .attribution { margin-bottom: 3rem; font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media screen and (min-width: 75rem) {
+@media screen and (min-width: 60rem) {
     section {
         padding: 14.25rem 10.25rem;
         display: grid;
